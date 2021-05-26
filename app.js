@@ -218,7 +218,7 @@ const citySearchBtn = document.getElementById('citySearchBtn');
 citySearchBtn.addEventListener('click', () => {
     const cityName = citySearch.value;
     console.log(cityName);
-    const searchCityUrl = `http://search.maps.sputnik.ru/search/addr?q=${cityName}&apikey=5032f91e8da6431d8605-f9c0c9a00357`;
+    const searchCityUrl = `https://search.maps.sputnik.ru/search/addr?q=${cityName}&apikey=5032f91e8da6431d8605-f9c0c9a00357`;
 
     fetch(searchCityUrl)
         .then(res => res.json())
