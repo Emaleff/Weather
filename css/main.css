@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    color: azure;
+    background-color: #5d8dff;
+    background-position: center;
+    background-size: cover;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.9;
+}
+
+.container {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.box {
+    text-align: center;
+    width: 320px;
+    /*height: 400px;*/
+    margin: 30px auto auto;
+    box-shadow: 0 0 5px gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#currentImg {
+    height: 75px;
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#currentImg img {
+    width: 100%;
+}
+
+#tomorrow, #dayAfterTomorrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.datTitle {
+    width: 125px;
+    text-align: left;
+}
+
+#citySearchBtn {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+
+#citySearchBtn img {
+    width: 100%;
+}
+
+#citySearchBtn:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+#citySearchBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+#citySearch {
+    height: 40px;
+    width: 250px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    color: white;
+}
+
+#forecastHourlyWeather {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.forecastHourlyItem {
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #843465;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+]}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+            linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+            linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+            linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container" id="container">
+    <div class="box">
+        <div id="citySearchBlock">
+            <input type="text" id="citySearch" placeholder="Введите город">
+            <button type="button" id="citySearchBtn">
+                <img src="images/letsGo.png" alt="">
+            </button>
+        </div>
+
+        <h2 id="city"></h2>
+        <div id="currentImg"></div>
+        <h1 id="currentTemperatureTitle"><span id="currentTemperature"></span> <span>&deg;</span></h1>
+
+        <div id="forecastHourlyWeather">
+            <div class="forecastHourlyItem">
+                <div>
+                    <span id="h3time"></span>
+                    <span>: 00</span>
+                </div>
+                <span id="hourly3">                </span>
+                <span> &deg;</span>
+                <div id="h3Img"></div>
+            </div>
+            <div class="forecastHourlyItem">
+                <div>
+                    <span id="h6time"></span>
+                    <span>: 00</span>
+                </div>
+                <span id="hourly6">                </span>
+                <span> &deg;</span>
+                <div id="h6Img"></div>
+            </div>
+            <div class="forecastHourlyItem">
+                <div>
+                    <span id="h9time"></span>
+                    <span>: 00</span>
+                </div>
+                <span id="hourly9">                </span>
+                <span> &deg;</span>
+                <div id="h9Img"></div>
+            </div>
+            <div class="forecastHourlyItem">
+                <div>
+                    <span id="h12time"></span>
+                    <span>: 00</span>
+                </div>
+                <span id="hourly12">                </span>
+                <span> &deg;</span>
+                <div id="h12Img"></div>
+            </div>
+            <div class="forecastHourlyItem">
+                <div>
+                    <span id="h15time"></span>
+                    <span>: 00</span>
+                </div>
+                <span id="hourly15">                </span>
+                <span> &deg;</span>
+                <div id="h15Img"></div>
+            </div>
+            <div class="forecastHourlyItem">
+                <div>
+                    <span id="h18time"></span>
+                    <span>: 00</span>
+                </div>
+                <span id="hourly18">                </span>
+                <span> &deg;</span>
+                <div id="h18Img"></div>
+            </div>
+            <div class="forecastHourlyItem">
+                <div>
+                    <span id="h21time"></span>
+                    <span>: 00</span>
+                </div>
+                <span id="hourly21">                </span>
+                <span> &deg;</span>
+                <div id="h21Img"></div>
+            </div>
+        </div>
+
+        <div id="tomorrow">
+            <div class="datTitle">
+                Завтра
+            </div>
+            <div id="tomorrowMaxTempBlock">
+                <span id="tomorrowMaxTemp"></span>
+                <span>&deg;</span>
+            </div>
+            <div id="tomorrowMinTempBLock">
+                <span id="tomorrowMinTemp"></span>
+                <span>&deg;</span>
+            </div>
+        </div>
+        <div id="dayAfterTomorrow">
+            <div class="datTitle">
+                Послезавтра
+            </div>
+            <div id="dayAfterTomorrowMaxTempBlock">
+                <span id="dayAfterTomorrowMaxTemp"></span>
+                <span>&deg;</span>
+            </div>
+            <div id="dayAfterTomorrowMinTempBlock">
+                <span id="dayAfterTomorrowMinTemp"></span>
+                <span>&deg;</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
