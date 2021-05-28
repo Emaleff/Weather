@@ -14,7 +14,7 @@ body {
 .container {
     background-position: center;
     background-size: cover;
-    /*min-height: 100%;*/
+    min-height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
@@ -158,3 +158,12 @@ h1 {
             linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
     background-color: #f6f8f4;
 }
+
+.el {
+    scrollbar-width: none; /* firefox */
+}
+.el::-webkit-scrollbar { /* webkit */
+    width: 0;
+    height: 0;
+}
+

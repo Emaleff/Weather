@@ -82,10 +82,13 @@ function getWeather(url) {
             dayAfterTomorrowMinTemp.textContent = Math.round(res.daily[1].temp.min);
 
             let date = new Date();
-            const currentHours = date.getHours();
+            let currentHours = date.getHours();
             let hourly3 = document.getElementById('hourly3');
             hourly3.textContent = Math.round(res.hourly[2].temp);
             const h3time = document.getElementById('h3time');
+            if (currentHours + 3 >= 24) {
+                currentHours = currentHours - 24;
+            }
             h3time.textContent = currentHours + 3;
 
             let imgHourly3 = document.createElement('img');
@@ -104,6 +107,9 @@ function getWeather(url) {
             hourly6.textContent = Math.round(res.hourly[5].temp);
 
             const h6time = document.getElementById('h6time');
+            if (currentHours + 6 >= 24) {
+                currentHours = currentHours - 24;
+            }
             h6time.textContent = currentHours + 6;
 
             let imgHourly6 = document.createElement('img');
@@ -122,6 +128,9 @@ function getWeather(url) {
             hourly9.textContent = Math.round(res.hourly[8].temp);
 
             const h9time = document.getElementById('h9time');
+            if (currentHours + 9 >= 24) {
+                currentHours = currentHours - 24;
+            }
             h9time.textContent = currentHours + 9;
 
             let imgHourly9 = document.createElement('img');
@@ -140,6 +149,9 @@ function getWeather(url) {
             hourly12.textContent = Math.round(res.hourly[11].temp);
 
             const h12time = document.getElementById('h12time');
+            if (currentHours + 12 >= 24) {
+                currentHours = currentHours - 24;
+            }
             h12time.textContent = currentHours + 12;
 
             let imgHourly12 = document.createElement('img');
@@ -158,6 +170,9 @@ function getWeather(url) {
             hourly15.textContent = Math.round(res.hourly[14].temp);
 
             const h15time = document.getElementById('h15time');
+            if (currentHours + 15 >= 24) {
+                currentHours = currentHours - 24;
+            }
             h15time.textContent = currentHours + 15;
 
             let imgHourly15 = document.createElement('img');
@@ -176,6 +191,9 @@ function getWeather(url) {
             hourly18.textContent = Math.round(res.hourly[17].temp);
 
             const h18time = document.getElementById('h18time');
+            if (currentHours + 18 >= 24) {
+                currentHours = currentHours - 24;
+            }
             h18time.textContent = currentHours + 18;
 
             let imgHourly18 = document.createElement('img');
@@ -194,6 +212,9 @@ function getWeather(url) {
             hourly21.textContent = Math.round(res.hourly[20].temp);
 
             const h21time = document.getElementById('h21time');
+                if (currentHours + 21 >= 24 ){
+                        currentHours = currentHours - 24;
+                }
             h21time.textContent = currentHours + 21;
 
             let imgHourly21 = document.createElement('img');
